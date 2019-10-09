@@ -1,0 +1,24 @@
+1.使用自己的话表述MVC。
+2.掌握JDBC的基本操作。
+  对book表中的数据进行增删改查；
+  book表：id int,bookName varchar,price int,description varchar
+  Book类：id int,bookName String,price int,description String
+  提示：创建数据库连接工具类DBUtil类。
+
+create table book(
+id int NOT NULL,
+bookName varchar(40) NOT NULL,
+price int NOT NULL,
+description varchar(40) NOT NULL,
+PRIMARY KEY(id)
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into book values(1,'zhangsan',999,'zhangsan');
+insert into book values(2,'zhangsan男',9999,'zhangsan男');
+
+select * from book;
+
+update book set bookName='张三' where id=2;
+
+delete from book where id=2;
