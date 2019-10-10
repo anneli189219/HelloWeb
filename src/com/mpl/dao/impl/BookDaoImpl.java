@@ -10,6 +10,11 @@ import com.mpl.dao.BookDao;
 import com.mpl.entity.BookBean;
 import com.mpl.util.DBUtil;
 
+/**
+ * dao层实现类
+ * @author 17软工莫培文
+ *
+ */
 public class BookDaoImpl implements BookDao {
 
 	@Override

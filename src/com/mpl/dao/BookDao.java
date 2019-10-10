@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 import com.mpl.entity.BookBean;
 
+/**
+ * dao层
+ * @author 17软工莫培文
+ *
+ */
 public interface BookDao {
 	/**
 	 * 获得指定 id 的内容 精确查询

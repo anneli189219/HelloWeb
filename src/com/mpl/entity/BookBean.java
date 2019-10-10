@@ -1,5 +1,10 @@
 package com.mpl.entity;
 
+/**
+ * 实体层
+ * @author 17软工莫培文
+ *
+ */
 public class BookBean {
 	private int id;
 	private String bookName;

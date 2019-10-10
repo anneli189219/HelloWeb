@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 
 /**
- * 类的描述
+ * 数据库操作池工具类
  * 
  * @author mopeiwen
  * @version 2019年10月10日 下午2:46:09
