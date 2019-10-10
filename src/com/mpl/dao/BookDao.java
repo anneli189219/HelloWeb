@@ -1,24 +1,46 @@
 package com.mpl.dao;
 
+import java.util.ArrayList;
+
 import com.mpl.entity.BookBean;
 
 public interface BookDao {
 	/**
-	 * »ñµÃÖ¸¶¨ id µÄÄÚÈİ
-	 * @param id bookµÄid
-	 * @return ·µ»Ø BookBean
+	 * è·å¾—æŒ‡å®š id çš„å†…å®¹ ç²¾ç¡®æŸ¥è¯¢
+	 * @param id bookçš„id
+	 * @return è¿”å› BookBean
 	 */
 	public BookBean selectBook(int id);
 	
 	/**
-	 * É¾³ıÖ¸¶¨ id µÄÄÚÈİ
-	 * @param id bookµÄid
+	 * è·å¾—æŒ‡å®š bookName çš„å†…å®¹ æ¨¡ç³ŠæŸ¥è¯¢
+	 * @param bookName ä¹¦å
+	 * @return è¿”å› BookBean
+	 */
+	public BookBean selectBook(String bookName);
+	
+	/**
+	 * åˆ é™¤æŒ‡å®š id çš„å†…å®¹
+	 * @param id bookçš„id
 	 */
 	public void delBook(int id);
 	
 	/**
-	 * Ìí¼ÓÖ¸¶¨µÄÄÚÈİµ½Êı¾İ¿â
-	 * @param BookBean Ìí¼ÓµÄÄÚÈİ
+	 * æ·»åŠ æŒ‡å®šçš„å†…å®¹åˆ°æ•°æ®åº“
+	 * @param BookBean æ·»åŠ çš„å†…å®¹
 	 */
 	public void addBook(BookBean bookBean);
+	
+	/**
+	 * ä¿®æ”¹æŒ‡å®š id çš„å†…å®¹
+	 * @param id bookçš„id
+	 * @param bookBean ä¿®æ”¹çš„å†…å®¹
+	 */
+	public void updateBook(BookBean bookBean);
+	
+	/**
+	 * è·å¾—bookåˆ—è¡¨
+	 * @return bookåˆ—è¡¨
+	 */
+	public ArrayList<BookBean> selectBooks();
 }
